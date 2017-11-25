@@ -1,0 +1,30 @@
+
+import bsh.Interpreter;
+import java.util.*;
+import java.io.*;
+
+class TestMethod{
+
+	public static void main(String args[]){
+
+		//Add String Code
+		String Code = INSERT_METHOD;
+
+		runString(Code);
+
+	}
+	
+	private static void runString(String code){
+	
+		Interpreter interpreter = new Interpreter();
+		try{
+		  interpreter.eval(code);//execute code
+		  METHOD_RETURN test = (METHOD_RETURN)interpreter.eval("(METHOD_RETURN) METHOD_NAME();");
+		  System.out.println("SUCCESS");
+
+		}catch(Exception e){
+		  System.out.println("BEANSHELL ERROR");
+		}
+	}
+
+}

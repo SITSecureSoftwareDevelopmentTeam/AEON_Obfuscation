@@ -1,0 +1,5 @@
+
+    const-string vVARIABLE_NUM, "ENCRYPTED_METHOD"
+
+    .local vVARIABLE_NUM, "decTesting":Ljava/lang/String;
+    invoke-direct {p0, vVARIABLE_NUM}, LCURR_PATH;->runString(Ljava/lang/String;)LRETURN_TYPE;

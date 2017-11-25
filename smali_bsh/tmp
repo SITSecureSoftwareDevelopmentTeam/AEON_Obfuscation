@@ -1,0 +1,50 @@
+.method protected onCreate(Landroid/os/Bundle;)V
+    .locals 3
+    .param p1, "savedInstanceState"    # Landroid/os/Bundle;
+
+    .prologue
+    .line 46
+    invoke-super {p0, p1}, Landroid/support/v7/app/AppCompatActivity;->onCreate(Landroid/os/Bundle;)V
+
+    .line 47
+    const v2, 0x7f04001b
+
+    invoke-virtual {p0, v2}, Lcom/example/acer1/test_sample_wo_beanshell/MainActivity;->setContentView(I)V
+
+    .line 49
+    new-instance v2, Landroid/os/StrictMode$ThreadPolicy$Builder;
+
+    invoke-direct {v2}, Landroid/os/StrictMode$ThreadPolicy$Builder;-><init>()V
+
+    invoke-virtual {v2}, Landroid/os/StrictMode$ThreadPolicy$Builder;->permitAll()Landroid/os/StrictMode$ThreadPolicy$Builder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Landroid/os/StrictMode$ThreadPolicy$Builder;->build()Landroid/os/StrictMode$ThreadPolicy;
+
+    move-result-object v0
+
+    .line 50
+    .local v0, "policy":Landroid/os/StrictMode$ThreadPolicy;
+    invoke-static {v0}, Landroid/os/StrictMode;->setThreadPolicy(Landroid/os/StrictMode$ThreadPolicy;)V
+
+    .line 52
+    const v2, 0x7f0b005e
+
+    invoke-virtual {p0, v2}, Lcom/example/acer1/test_sample_wo_beanshell/MainActivity;->findViewById(I)Landroid/view/View;
+
+    move-result-object v1
+
+    check-cast v1, Landroid/widget/TextView;
+
+    .line 53
+    .local v1, "tv1":Landroid/widget/TextView;
+    invoke-static {}, Lcom/example/acer1/test_sample_wo_beanshell/MainActivity;->getUrlDeeds()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 54
+    return-void
+.end method

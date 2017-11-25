@@ -1,0 +1,1 @@
+    invoke-static {}, Lcom/example/acer1/test_sample_wo_beanshell/MainActivity;->getUrlDeeds()Ljava/lang/String;
