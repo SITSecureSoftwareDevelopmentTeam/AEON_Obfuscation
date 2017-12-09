@@ -1,4 +1,2 @@
-Android Encryption Based Obfuscation (AEON)
-
-1) To Execute tool, run following command in linux:
-        sh main.sh <apkfile>
+#Android Encryption based Obfuscation(AEON)
+##Android Encryption based Obfuscation (AEON) is a novel Obfuscation technique, that hopes to obliterate this problem by implementing code encryption on static code.
